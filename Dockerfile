@@ -1,4 +1,4 @@
-FROM python:2
+FROM python
 
 RUN update-ca-certificates -f \
  && curl -sL https://deb.nodesource.com/setup_4.x | bash - \
