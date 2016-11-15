@@ -19,3 +19,7 @@ RUN cd /tmp/ \
  && rm $PHANTOM_JS.tar.bz2 \
  && mv $PHANTOM_JS /usr/local/share \
  && ln -sf /usr/local/share/$PHANTOM_JS/bin/phantomjs /usr/local/bin
+
+RUN pip install --upgrade pip \
+ && pip install setuptools
+
